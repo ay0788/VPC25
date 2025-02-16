@@ -8,8 +8,8 @@ import soundfile as sf
 whisper_model = whisper.load_model("base")
 
 # Define the text-to-speech function (Piper)
-def text_to_speech(text, output_file, model_path=r"C:\Users\sdour\Desktop\ndsc\national-data-science-competition\competitionn\piper\voices\Ten_US-lessac-medium.onnx"):
-    piper_path = r"C:\Users\sdour\Desktop\ndsc\national-data-science-competition\competitionn\piper\piper.exe"
+def text_to_speech(text, output_file, model_path=r"piper\voices\en_US-lessac-medium.onnx"):
+    piper_path = r"piper\piper.exe"
     if not os.path.exists(piper_path): 
 
         raise FileNotFoundError(f"Piper executable not found at: {piper_path}")
